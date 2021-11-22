@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="15" failed="3" ignored="0" total="18" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="book-flight-module" duration-ms="53005" started-at="2021-12-02T03:43:16 GMT" finished-at="2021-12-02T03:44:09 GMT">
+    <groups>
+    </groups>
+    <test name="book-flight-1-passengers" duration-ms="13473" started-at="2021-12-02T03:43:16 GMT" finished-at="2021-12-02T03:43:30 GMT">
+      <class name="com.newtours.tests.BookFlightTest">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938]" name="setupDriver" is-config="true" duration-ms="2763" started-at="2021-12-02T03:43:16 GMT" finished-at="2021-12-02T03:43:19 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="setupParameters(java.lang.String,java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938]" name="setupParameters" is-config="true" duration-ms="4" started-at="2021-12-02T03:43:19 GMT" depends-on-methods="com.tests.BaseTest.setupDriver" finished-at="2021-12-02T03:43:19 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$584 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupParameters -->
+        <test-method status="FAIL" signature="registrationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938]" name="registrationTest" duration-ms="10639" started-at="2021-12-02T03:43:19 GMT" finished-at="2021-12-02T03:43:30 GMT">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=94.0.4606.61)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: '9740db717c9d', ip: '172.28.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '4.19.128-microsoft-standard', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [a4f14455ef5bd55bfa5f37814b105fbd, get {url=https://vins-udemy.s3.amazonaws.com/docker/docker-book-flight.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /tmp/.com.google.Chrome.LXfz5x}, goog:chromeOptions: {debuggerAddress: localhost:44809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: a4f14455ef5bd55bfa5f37814b1...}
+Session ID: a4f14455ef5bd55bfa5f37814b105fbd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=94.0.4606.61)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: '9740db717c9d', ip: '172.28.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '4.19.128-microsoft-standard', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [a4f14455ef5bd55bfa5f37814b105fbd, get {url=https://vins-udemy.s3.amazonaws.com/docker/docker-book-flight.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /tmp/.com.google.Chrome.LXfz5x}, goog:chromeOptions: {debuggerAddress: localhost:44809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: a4f14455ef5bd55bfa5f37814b1...}
+Session ID: a4f14455ef5bd55bfa5f37814b105fbd
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+at com.newtours.pages.RegistrationPage.goTo(RegistrationPage.java:40)
+at com.newtours.tests.BookFlightTest.registrationTest(BookFlightTest.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationTest -->
+        <test-method status="SKIP" signature="flightDetailsTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938]" name="flightDetailsTest" duration-ms="0" started-at="2021-12-02T03:43:30 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationTest" finished-at="2021-12-02T03:43:30 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.flightDetailsTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailsTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDetailsTest -->
+        <test-method status="SKIP" signature="registrationConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938]" name="registrationConfirmationTest" duration-ms="0" started-at="2021-12-02T03:43:30 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.registrationTest" finished-at="2021-12-02T03:43:30 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.registrationConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.registrationConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938]" name="quitDriver" is-config="true" duration-ms="15" started-at="2021-12-02T03:43:30 GMT" finished-at="2021-12-02T03:43:30 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="SKIP" signature="enterBillingAddressTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938]" name="enterBillingAddressTest" duration-ms="0" started-at="2021-12-02T03:43:30 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.bookFlightTest" finished-at="2021-12-02T03:43:30 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.enterBillingAddressTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.enterBillingAddressTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterBillingAddressTest -->
+        <test-method status="SKIP" signature="bookFlightTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938]" name="bookFlightTest" duration-ms="0" started-at="2021-12-02T03:43:30 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsTest" finished-at="2021-12-02T03:43:30 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.bookFlightTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.bookFlightTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookFlightTest -->
+        <test-method status="SKIP" signature="flightConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938]" name="flightConfirmationTest" duration-ms="0" started-at="2021-12-02T03:43:30 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.enterBillingAddressTest" finished-at="2021-12-02T03:43:30 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.flightConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@4fe3c938] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationTest -->
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </test> <!-- book-flight-1-passengers -->
+    <test name="book-flight-3-passengers" duration-ms="27056" started-at="2021-12-02T03:43:16 GMT" finished-at="2021-12-02T03:43:43 GMT">
+      <class name="com.newtours.tests.BookFlightTest">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637]" name="setupDriver" is-config="true" duration-ms="13883" started-at="2021-12-02T03:43:16 GMT" finished-at="2021-12-02T03:43:30 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="setupParameters(java.lang.String,java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637]" name="setupParameters" is-config="true" duration-ms="1" started-at="2021-12-02T03:43:30 GMT" depends-on-methods="com.tests.BaseTest.setupDriver" finished-at="2021-12-02T03:43:30 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1753 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupParameters -->
+        <test-method status="FAIL" signature="registrationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637]" name="registrationTest" duration-ms="13154" started-at="2021-12-02T03:43:30 GMT" finished-at="2021-12-02T03:43:43 GMT">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=94.0.4606.61)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: '9740db717c9d', ip: '172.28.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '4.19.128-microsoft-standard', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [543dc4e275f6cb131f94f08a0b483bf0, get {url=https://vins-udemy.s3.amazonaws.com/docker/docker-book-flight.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /tmp/.com.google.Chrome.oZG7ME}, goog:chromeOptions: {debuggerAddress: localhost:42991}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 543dc4e275f6cb131f94f08a0b4...}
+Session ID: 543dc4e275f6cb131f94f08a0b483bf0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=94.0.4606.61)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: '9740db717c9d', ip: '172.28.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '4.19.128-microsoft-standard', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [543dc4e275f6cb131f94f08a0b483bf0, get {url=https://vins-udemy.s3.amazonaws.com/docker/docker-book-flight.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /tmp/.com.google.Chrome.oZG7ME}, goog:chromeOptions: {debuggerAddress: localhost:42991}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 543dc4e275f6cb131f94f08a0b4...}
+Session ID: 543dc4e275f6cb131f94f08a0b483bf0
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+at com.newtours.pages.RegistrationPage.goTo(RegistrationPage.java:40)
+at com.newtours.tests.BookFlightTest.registrationTest(BookFlightTest.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationTest -->
+        <test-method status="SKIP" signature="registrationConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637]" name="registrationConfirmationTest" duration-ms="0" started-at="2021-12-02T03:43:43 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.registrationTest" finished-at="2021-12-02T03:43:43 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.registrationConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.registrationConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method status="SKIP" signature="flightDetailsTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637]" name="flightDetailsTest" duration-ms="0" started-at="2021-12-02T03:43:43 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationTest" finished-at="2021-12-02T03:43:43 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.flightDetailsTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailsTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDetailsTest -->
+        <test-method status="SKIP" signature="enterBillingAddressTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637]" name="enterBillingAddressTest" duration-ms="0" started-at="2021-12-02T03:43:43 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.bookFlightTest" finished-at="2021-12-02T03:43:43 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.enterBillingAddressTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.enterBillingAddressTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterBillingAddressTest -->
+        <test-method status="SKIP" signature="bookFlightTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637]" name="bookFlightTest" duration-ms="0" started-at="2021-12-02T03:43:43 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsTest" finished-at="2021-12-02T03:43:43 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.bookFlightTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.bookFlightTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookFlightTest -->
+        <test-method status="SKIP" signature="flightConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637]" name="flightConfirmationTest" duration-ms="0" started-at="2021-12-02T03:43:43 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.enterBillingAddressTest" finished-at="2021-12-02T03:43:43 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.flightConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationTest -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@1f36e637]" name="quitDriver" is-config="true" duration-ms="10" started-at="2021-12-02T03:43:43 GMT" finished-at="2021-12-02T03:43:43 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </test> <!-- book-flight-3-passengers -->
+    <test name="book-flight-2-passengers" duration-ms="53004" started-at="2021-12-02T03:43:16 GMT" finished-at="2021-12-02T03:44:09 GMT">
+      <class name="com.newtours.tests.BookFlightTest">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade]" name="setupDriver" is-config="true" duration-ms="41396" started-at="2021-12-02T03:43:16 GMT" finished-at="2021-12-02T03:43:58 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="setupParameters(java.lang.String,java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade]" name="setupParameters" is-config="true" duration-ms="0" started-at="2021-12-02T03:43:58 GMT" depends-on-methods="com.tests.BaseTest.setupDriver" finished-at="2021-12-02T03:43:58 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1169 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupParameters -->
+        <test-method status="FAIL" signature="registrationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade]" name="registrationTest" duration-ms="11552" started-at="2021-12-02T03:43:58 GMT" finished-at="2021-12-02T03:44:09 GMT">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=94.0.4606.61)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: '9740db717c9d', ip: '172.28.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '4.19.128-microsoft-standard', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [9d3d8bbada2231484f6ed007d182d396, get {url=https://vins-udemy.s3.amazonaws.com/docker/docker-book-flight.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /tmp/.com.google.Chrome.ukgECo}, goog:chromeOptions: {debuggerAddress: localhost:41055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 9d3d8bbada2231484f6ed007d18...}
+Session ID: 9d3d8bbada2231484f6ed007d182d396]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=94.0.4606.61)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: '9740db717c9d', ip: '172.28.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '4.19.128-microsoft-standard', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [9d3d8bbada2231484f6ed007d182d396, get {url=https://vins-udemy.s3.amazonaws.com/docker/docker-book-flight.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /tmp/.com.google.Chrome.ukgECo}, goog:chromeOptions: {debuggerAddress: localhost:41055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 9d3d8bbada2231484f6ed007d18...}
+Session ID: 9d3d8bbada2231484f6ed007d182d396
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+at com.newtours.pages.RegistrationPage.goTo(RegistrationPage.java:40)
+at com.newtours.tests.BookFlightTest.registrationTest(BookFlightTest.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationTest -->
+        <test-method status="SKIP" signature="registrationConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade]" name="registrationConfirmationTest" duration-ms="0" started-at="2021-12-02T03:44:09 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.registrationTest" finished-at="2021-12-02T03:44:09 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.registrationConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.registrationConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method status="SKIP" signature="bookFlightTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade]" name="bookFlightTest" duration-ms="0" started-at="2021-12-02T03:44:09 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsTest" finished-at="2021-12-02T03:44:09 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.bookFlightTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.bookFlightTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookFlightTest -->
+        <test-method status="SKIP" signature="flightDetailsTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade]" name="flightDetailsTest" duration-ms="0" started-at="2021-12-02T03:44:09 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationTest" finished-at="2021-12-02T03:44:09 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.flightDetailsTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailsTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDetailsTest -->
+        <test-method status="SKIP" signature="enterBillingAddressTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade]" name="enterBillingAddressTest" duration-ms="0" started-at="2021-12-02T03:44:09 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.bookFlightTest" finished-at="2021-12-02T03:44:09 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.enterBillingAddressTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.enterBillingAddressTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterBillingAddressTest -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade]" name="quitDriver" is-config="true" duration-ms="47" started-at="2021-12-02T03:44:09 GMT" finished-at="2021-12-02T03:44:09 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="SKIP" signature="flightConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade]" name="flightConfirmationTest" duration-ms="0" started-at="2021-12-02T03:44:09 GMT" depends-on-methods="com.newtours.tests.BookFlightTest.enterBillingAddressTest" finished-at="2021-12-02T03:44:09 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BookFlightTest.flightConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationTest()[pri:0, instance:com.newtours.tests.BookFlightTest@5ae63ade] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationTest -->
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </test> <!-- book-flight-2-passengers -->
+  </suite> <!-- book-flight-module -->
+</testng-results>
